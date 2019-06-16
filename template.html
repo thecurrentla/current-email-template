@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="x-apple-disable-message-reformatting">
+
+		<!--[if (mso)|(IE)]>
+		<xml>
+			<o:OfficeDocumentSettings>
+				<o:AllowPNG/>
+				<o:PixelsPerInch>96</o:PixelsPerInch>
+			</o:OfficeDocumentSettings>
+		</xml>
+		<![endif]-->
+
+		<title>*|RSSFEED:TITLE|* | *|RSSITEM:TITLE|*</title>
+
+		<style>
+		body {
+		  Margin-top: 0 !important;
+		  Margin-left: 0 !important;
+		  Margin-right: 0 !important;
+		  Margin-bottom: 0 !important;
+		  padding: 0 !important;
+		  -webkit-text-size-adjust: 100% !important;
+		  -ms-text-size-adjust: 100% !important;
+		  -webkit-font-smoothing: antialiased !important;
+		  font-family: Open Sans, Arial, sans-serif;
+		}
+		
+		body, .col, td, th, div, p, ul, ol {
+		  font-family: Open Sans, Arial, sans-serif;
+		}
+		
+		table {
+		  border-collapse: collapse;
+		  mso-table-lspace: 0px;
+		  mso-table-rspace: 0px;
+		}
+		
+		td,
+		a,
+		span {
+		  border-collapse: collapse;
+		  mso-line-height-rule: exactly;
+		}
+		
+		p {
+		  Margin-top: 0px;
+		  Margin-left: 0px;
+		  Margin-right: 0px;
+		  Margin-bottom: 14px;
+		}
+		
+		a {
+		  color: #6bbaca;
+		}
+		
+		a:hover, a:focus {
+		  color: #58b1c3;
+		}
+		
+		h1, h2, h3, h4, h5, h6 {
+		  color: #231f20;
+		  line-height: 1.2;
+		}
+		
+		h1, h2 {
+		  font-family: Libre Baskerville, Georgia, serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+		
+		h1 {
+		  Margin-top: 28px;
+		  Margin-bottom: 18px;
+		  text-transform: uppercase;
+		}
+		
+		h2 {
+		  Margin-top: 28px;
+		  Margin-bottom: 18px;
+		  color: #6bbaca;
+		  font-size: 19.8px;
+		}
+		
+		h3, h4, h5, h6 {
+		  Margin-top: 22px;
+		  Margin-bottom: 14px;
+		}
+		
+		.logo-mark {
+		  Margin-bottom: 14px;
+		  color: #231f20;
+		  font-family: Libre Baskerville, Georgia, serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+		
+		.newsletter-title {
+		  Margin-top: 0;
+		  Margin-bottom: 14px;
+		  line-height: 1 !important;
+		}
+		
+		.section-header, .section-footer {
+		  color: #6d6e71;
+		  font-size: 14px;
+		}
+		
+		.section-header a, .section-footer a {
+		  color: #435557 !important;
+		}
+		
+		.section-header a:hover, .section-header a:focus, .section-footer a:hover, .section-footer a:focus {
+		  color: #384749 !important;
+		}
+		
+		hr {
+		  Margin-top: 22px;
+		  Margin-bottom: 22px;
+		  border-width: 1px 0 0 0;
+		  border-color: #6d6e71;
+		}
+		
+		b, strong {
+		  font-weight: 600;
+		}
+		
+		.text-small, .has-small-font-size, small {
+		  font-size: 14px;
+		}
+		
+		.text-large, .has-large-font-size {
+		  font-size: 22px;
+		}
+		
+		.text-faded {
+		  opacity: 0.75;
+		}
+		
+		figure {
+		  display: block;
+		  max-width: 100%;
+		  Margin-top: 18px;
+		  Margin-bottom: 18px;
+		  Margin-left: 0;
+		  Margin-right: 0;
+		}
+		
+		figcaption {
+		  display: block;
+		  padding: 4px;
+		  Margin-bottom: 18px;
+		  font-style: italic;
+		  font-size: 14px;
+		  font-weight: 600;
+		  color: #6d6e71;
+		}
+		
+		.wrapper img {
+		  max-width: 632px;
+		}
+		
+		@media only screen and (max-width: 632px) {
+		  .wrapper img {
+		    max-width: 100%;
+		  }
+		}
+		
+		.container {
+		  max-width: 632px;
+		  Margin-left: auto;
+		  Margin-right: auto;
+		}
+		
+		.col {
+		  font-size: 18px;
+		  line-height: 1.5;
+		  vertical-align: top;
+		}
+		
+		.pad-none {
+		  padding: 0;
+		}
+		
+		.pad-sm {
+		  padding: 14px;
+		}
+		
+		.pad-md {
+		  padding: 18px;
+		}
+		
+		.pad-lg {
+		  padding: 22px;
+		}
+		
+		.pad-t-none {
+		  padding-top: 0;
+		}
+		
+		.pad-t-sm {
+		  padding-top: 14px;
+		}
+		
+		.pad-t-md {
+		  padding-top: 18px;
+		}
+		
+		.pad-t-lg {
+		  padding-top: 22px;
+		}
+		
+		.pad-r-none {
+		  padding-right: 0;
+		}
+		
+		.pad-r-sm {
+		  padding-right: 14px;
+		}
+		
+		.pad-r-md {
+		  padding-right: 18px;
+		}
+		
+		.pad-r-lg {
+		  padding-right: 22px;
+		}
+		
+		.pad-b-none {
+		  padding-bottom: 0;
+		}
+		
+		.pad-b-sm {
+		  padding-bottom: 14px;
+		}
+		
+		.pad-b-md {
+		  padding-bottom: 18px;
+		}
+		
+		.pad-b-lg {
+		  padding-bottom: 22px;
+		}
+		
+		.pad-l-none {
+		  padding-left: 0;
+		}
+		
+		.pad-l-sm {
+		  padding-left: 14px;
+		}
+		
+		.pad-l-md {
+		  padding-left: 18px;
+		}
+		
+		.pad-l-lg {
+		  padding-left: 22px;
+		}
+		
+		.pad-x-none {
+		  padding-right: 0;
+		  padding-left: 0;
+		}
+		
+		.pad-x-sm {
+		  padding-right: 14px;
+		  padding-left: 14px;
+		}
+		
+		.pad-x-md {
+		  padding-right: 18px;
+		  padding-left: 18px;
+		}
+		
+		.pad-x-lg {
+		  padding-right: 22px;
+		  padding-left: 22px;
+		}
+		
+		.pad-y-none {
+		  padding-top: 0;
+		  padding-bottom: 0;
+		}
+		
+		.pad-y-sm {
+		  padding-top: 14px;
+		  padding-bottom: 14px;
+		}
+		
+		.pad-y-md {
+		  padding-top: 18px;
+		  padding-bottom: 18px;
+		}
+		
+		.pad-y-lg {
+		  padding-top: 22px;
+		  padding-bottom: 22px;
+		}
+		
+		@media only screen and (max-width: 632px) {
+		  .wrapper img {
+		    max-width: 100% !important;
+		  }
+		  u ~ div .wrapper {
+		    min-width: 100vw !important;
+		  }
+		  .container {
+		    width: 100% !important;
+		    -webkit-text-size-adjust: 100%;
+		  }
+		}
+		
+		@media only screen and (min-width: 474px) {
+		  .col {
+		    box-sizing: border-box;
+		    display: inline-block !important;
+		    line-height: 1.5;
+		    width: 100% !important;
+		  }
+		  .col-1 {
+		    max-width: 25%;
+		  }
+		  .col-2 {
+		    max-width: 50%;
+		  }
+		  .col-3 {
+		    max-width: 75%;
+		  }
+		  .col-third {
+		    max-width: 33.33333%;
+		  }
+		  .col-push-1 {
+		    Margin-left: 25%;
+		  }
+		  .col-push-2 {
+		    Margin-left: 50%;
+		  }
+		  .col-push-3 {
+		    Margin-left: 75%;
+		  }
+		  .col-push-third {
+		    Margin-left: 33.33333%;
+		  }
+		  .pad-sm {
+		    padding: 18px !important;
+		  }
+		  .pad-md {
+		    padding: 22px !important;
+		  }
+		  .pad-lg {
+		    padding: 28px !important;
+		  }
+		  .pad-t-sm {
+		    padding-top: 18px !important;
+		  }
+		  .pad-t-md {
+		    padding-top: 22px !important;
+		  }
+		  .pad-t-lg {
+		    padding-top: 28px !important;
+		  }
+		  .pad-r-sm {
+		    padding-right: 18px !important;
+		  }
+		  .pad-r-md {
+		    padding-right: 22px !important;
+		  }
+		  .pad-r-lg {
+		    padding-right: 28px !important;
+		  }
+		  .pad-b-sm {
+		    padding-bottom: 18px !important;
+		  }
+		  .pad-b-md {
+		    padding-bottom: 22px !important;
+		  }
+		  .pad-b-lg {
+		    padding-bottom: 28px !important;
+		  }
+		  .pad-l-sm {
+		    padding-left: 18px !important;
+		  }
+		  .pad-l-md {
+		    padding-left: 22px !important;
+		  }
+		  .pad-l-lg {
+		    padding-left: 28px !important;
+		  }
+		  .pad-x-sm {
+		    padding-right: 18px !important;
+		    padding-left: 18px !important;
+		  }
+		  .pad-x-md {
+		    padding-right: 22px !important;
+		    padding-left: 22px !important;
+		  }
+		  .pad-x-lg {
+		    padding-right: 28px !important;
+		    padding-left: 28px !important;
+		  }
+		  .pad-y-sm {
+		    padding-top: 18px !important;
+		    padding-bottom: 18px !important;
+		  }
+		  .pad-y-md {
+		    padding-top: 22px !important;
+		    padding-bottom: 22px !important;
+		  }
+		  .pad-y-lg {
+		    padding-top: 28px !important;
+		    padding-bottom: 28px !important;
+		  }
+		}
+		
+		.has-background {
+		  padding: 1em;
+		}
+		
+		.has-gray-background-color {
+		  color: white !important;
+		  border-color: #231f20 !important;
+		  background-color: #231f20 !important;
+		}
+		
+		.has-gray-light-background-color {
+		  color: white !important;
+		  border-color: #6d6e71 !important;
+		  background-color: #6d6e71 !important;
+		}
+		
+		.has-teal-background-color {
+		  color: white !important;
+		  border-color: #6bbaca !important;
+		  background-color: #6bbaca !important;
+		}
+		
+		.has-teal-light-background-color {
+		  color: #231f20 !important;
+		  border-color: #9ccfde !important;
+		  background-color: #9ccfde !important;
+		}
+		
+		.has-gold-background-color {
+		  color: white !important;
+		  border-color: #d3ab47 !important;
+		  background-color: #d3ab47 !important;
+		}
+		
+		.has-orange-background-color {
+		  color: white !important;
+		  border-color: #f15a29 !important;
+		  background-color: #f15a29 !important;
+		}
+		
+		.has-gray-color {
+		  color: #231f20 !important;
+		}
+		
+		.has-gray-light-color {
+		  color: #6d6e71 !important;
+		}
+		
+		.has-teal-color {
+		  color: #6bbaca !important;
+		}
+		
+		.has-teal-light-color {
+		  color: #9ccfde !important;
+		}
+		
+		.has-gold-color {
+		  color: #d3ab47 !important;
+		}
+		
+		.has-orange-color {
+		  color: #f15a29 !important;
+		}
+		
+		.wp-block-button {
+		  Margin-top: 14px;
+		  Margin-bottom: 14px;
+		}
+		
+		.wp-block-button__link {
+		  font-weight: 600;
+		  text-transform: uppercase;
+		  letter-spacing: 0.05em;
+		}
+		
+		.wp-block-button__link::after {
+		  content: '\0000BB';
+		  Margin-left: 0.3em;
+		}
+		
+		@media screen {
+		  .wp-block-button__link {
+		    display: inline-block;
+		    padding: 0.4em 0.8em;
+		    border-width: 0;
+		    border-style: solid;
+		    color: white !important;
+		    background-color: #6bbaca !important;
+		    text-decoration: none;
+		  }
+		  .wp-block-button__link:hover, .wp-block-button__link:focus {
+		    color: white !important;
+		    background-color: #58b1c3 !important;
+		  }
+		}
+		
+		.wp-block-separator {
+		  max-width: 210.666666667px;
+		  Margin-left: auto;
+		  Margin-right: auto;
+		}
+		
+		.wp-block-separator.is-style-wide {
+		  max-width: 100%;
+		}
+		
+		.wp-block-gallery {
+		  padding: 0;
+		  Margin-top: 0;
+		  Margin-left: 0;
+		  Margin-right: 0;
+		  Margin-bottom: 14px;
+		}
+		
+		@media screen, print {
+		  .blocks-gallery-item {
+		    list-style: none;
+		    display: inline-block;
+		    vertical-align: top;
+		    width: 46%;
+		    max-width: 100%;
+		    Margin-top: 0;
+		    Margin-left: 0;
+		    Margin-right: 4%;
+		    Margin-bottom: 4%;
+		  }
+		  .blocks-gallery-item figure, .blocks-gallery-item img {
+		    display: inline-block;
+		    max-width: 100%;
+		  }
+		}
+		
+		.wp-block-quote, .wp-block-pullquote blockquote {
+		  border-left: 3px solid;
+		  Margin-top: 18px;
+		  Margin-bottom: 18px;
+		  padding: 18px;
+		}
+		
+		.wp-block-table {
+		  border-collapse: collapse;
+		  max-width: 100%;
+		  Margin-top: 0px;
+		  Margin-left: 0px;
+		  Margin-right: 0px;
+		  Margin-bottom: 14px;
+		}
+		
+		@media screen, print {
+		  .wp-block-table {
+		    min-width: 50%;
+		  }
+		}
+		
+		.wp-block-table thead, .wp-block-table tfoot {
+		  background-color: #f8f8f6;
+		  border-color: #e6e7e8;
+		  border-style: solid;
+		  border-width: 0;
+		}
+		
+		.wp-block-table thead {
+		  border-bottom-width: 2px;
+		}
+		
+		.wp-block-table tfoot {
+		  border-top-width: 2px;
+		}
+		
+		.wp-block-table tr, .wp-block-table td, .wp-block-table th {
+		  border-color: #e6e7e8;
+		  border-style: solid;
+		  border-width: 0;
+		}
+		
+		.wp-block-table tr {
+		  border-width: 0 1px;
+		}
+		
+		.wp-block-table td, .wp-block-table th {
+		  padding: 0.4em 0.8em;
+		}
+		
+		.wp-block-table td {
+		  border-bottom-width: 1px;
+		  border-right-width: 1px;
+		}
+		
+		.wp-block-table td:first-child {
+		  border-left-width: 1px;
+		}
+		
+		.wp-block-table tr:first-child td {
+		  border-top-width: 1px;
+		}
+		
+		.wp-block-table.is-style-stripes tr, .wp-block-table.is-style-stripes td, .wp-block-table.is-style-stripes th {
+		  border-color: #f8f8f6;
+		}
+		
+		.wp-block-table.is-style-stripes tr:nth-child(odd) {
+		  background-color: transparent;
+		}
+		
+		.wp-block-table.is-style-stripes tr:nth-child(even) {
+		  background-color: rgba(248, 248, 246, 0.5);
+		}
+		
+		.wp-block-group {
+		  Margin-top: 18px;
+		  Margin-bottom: 42px;
+		}
+		
+		.wp-block-group > *:last-child {
+		  Margin-bottom: 0;
+		}
+		
+		.post-ad {
+		  display: block;
+		  Margin-top: 22px;
+		  Margin-bottom: 22px;
+		  background-color: #f8f8f6;
+		}
+		
+		.post-ad hr {
+		  border-color: #d3ab47;
+		  border-top-width: 2px;
+		}
+		
+		.post-ad hr:first-child {
+		  Margin-bottom: 14px;
+		}
+		
+		.post-ad hr:last-child {
+		  Margin-top: 14px;
+		}
+		
+		.post-ad-title {
+		  padding-bottom: 14px;
+		  text-align: center;
+		  text-transform: uppercase;
+		  color: #d3ab47;
+		  font-weight: 600;
+		}
+		
+		.post-ad-image {
+		  padding-left: 18px;
+		  padding-right: 18px;
+		}
+		
+		.mcnPreviewText {
+		  display: none !important;
+		}
+		
+		</style>
+		
+		<!--[if (mso)|(IE)]>
+		<style>
+		.spacer,
+		.divider {
+		  mso-line-height-rule: exactly;
+		}
+		
+		td,
+		th,
+		div,
+		p,
+		a {
+		  font-size: 18px;
+		  line-height: 1.5;
+		}
+		
+		td,
+		th,
+		div,
+		p,
+		a,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+		  font-family: Open Sans, Arial, sans-serif;
+		}
+		
+		h1,
+		h2 {
+		  font-family: Libre Baskerville, Georgia, serif;
+		}
+		
+		#outlook a {
+		  padding: 0;
+		}
+		
+		span.MsoHyperlink {
+		  mso-style-priority: 99;
+		  color: inherit;
+		}
+		
+		span.MsoHyperlinkFollowed {
+		  mso-style-priority: 99;
+		  color: inherit;
+		}
+		
+		.main-content img.mcRssImage {
+		  display: none !important;
+		  visibility: hidden !important;
+		  mso-hide: all;
+		}
+		
+		</style>
+		<![endif]-->
+	</head>
+
+	<body style="box-sizing:border-box;margin:0;padding:0;width:100%;word-break:break-word;-webkit-font-smoothing:antialiased;">
+		<div class="mcnPreviewText" style="display:none;font-size:0;line-height:0;">*|RSSITEM:CONTENT|*</div>
+		<div class="mcnPreviewText" style="display:none;max-height:0px;overflow:hidden;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</div>
+
+		<table class="wrapper" bgcolor="#f8f8f6" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td align="center" class="section-header">
+					<table class="container" cellpadding="0" cellspacing="0" width="600">
+						<tr>
+							<td align="center" class="pad-y-md pad-x-md text-small text-faded">
+								<a href="*|ARCHIVE|*" target="_blank">View in browser</a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" class="main-content">
+					<table class="container" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" width="600">
+						<tr>
+							<td align="left" class="pad-y-md pad-x-lg">
+
+								<table cellpadding="0" cellspacing="0" role="presentation" width="100%">
+									<tr>
+										<td class="section-header">
+											<table cellpadding="0" cellspacing="0" role="presentation" width="100%">
+												<tr>
+														<td class="col" width="100%" align="center" valign="top">
+																<img src="https://thecurrentla.com/wp-content/uploads/Mark-Padded-Reversed.png" alt="The Current" class="logo-mark" width="32" />
+														</td>
+												</tr>
+												<tr>
+														<td class="col" width="100%" align="center" valign="top">
+															*|RSSITEMS:|*
+															<h1 class="newsletter-title">*|RSSFEED:TITLE|*</h1>
+
+															<p class="text-small"><em>Edited by *|RSSITEM:AUTHOR|*</em> <span class="text-faded">/</span> <em>*|RSSITEM:DATE:n.j.y|*</em></p>
+															*|END:RSSITEMS|*
+														</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+
+								<table cellpadding="0" cellspacing="0" role="presentation" width="100%">
+									<tr>
+										<td class="main-content">
+											<table cellpadding="0" cellspacing="0" role="presentation" width="100%">
+												*|RSSITEMS:|*
+
+												<tr>
+													<td class="col" width="100%" valign="top">
+
+															<div>*|RSSITEM:CONTENT_FULL|*</div>
+
+													</td>
+												</tr>
+												*|END:RSSITEMS|*
+											</table>
+										</td>
+									</tr>
+								</table>
+
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" class="section-footer">
+					<table class="container" cellpadding="0" cellspacing="0" width="600">
+						<tr>
+							<td align="center" class="pad-y-lg pad-x-md">
+								<p class="text-small"><em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*. All rights reserved.</em></p>
+
+								*|IFNOT:ARCHIVE_PAGE|*
+								<p class="text-small">*|LIST:DESCRIPTION|*</p>
+
+								<p class="text-small">Our mailing address is:<br />
+								*|HTML:LIST_ADDRESS_HTML|*</p>
+								*|END:IF|*
+
+								<p class="text-small">Want to change how you receive these emails?<br />
+								You can <a href="*|UPDATE_PROFILE|*">update your preferences</a> or <a href="*|UNSUB|*">unsubscribe from this list</a>.</p>
+
+								*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+	</body>
+</html>

@@ -1,0 +1,52 @@
+.spacer,
+.divider {
+  mso-line-height-rule: exactly;
+}
+
+td,
+th,
+div,
+p,
+a {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+td,
+th,
+div,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Open Sans, Arial, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: Libre Baskerville, Georgia, serif;
+}
+
+#outlook a {
+  padding: 0;
+}
+
+span.MsoHyperlink {
+  mso-style-priority: 99;
+  color: inherit;
+}
+
+span.MsoHyperlinkFollowed {
+  mso-style-priority: 99;
+  color: inherit;
+}
+
+.main-content img.mcRssImage {
+  display: none !important;
+  visibility: hidden !important;
+  mso-hide: all;
+}

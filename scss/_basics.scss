@@ -1,0 +1,139 @@
+body {
+	Margin-top: 0 !important;
+	Margin-left: 0 !important;
+	Margin-right: 0 !important;
+	Margin-bottom: 0 !important;
+	padding: 0 !important;
+	-webkit-text-size-adjust: 100% !important;
+	-ms-text-size-adjust: 100% !important;
+	-webkit-font-smoothing: antialiased !important;
+	font-family: $font-family-base;
+}
+
+body, .col, td, th, div, p, ul, ol {
+	font-family: $font-family-base;
+}
+
+
+table {
+	border-collapse: collapse;
+	mso-table-lspace: 0px;
+	mso-table-rspace: 0px;
+}
+td,
+a,
+span {
+	border-collapse: collapse;
+	mso-line-height-rule: exactly;
+}
+
+p {
+	Margin-top: 0px;
+	Margin-left: 0px;
+	Margin-right: 0px;
+	Margin-bottom: $spacing-sm;
+}
+
+a {
+	color: $link-color;
+
+	&:hover, &:focus {
+		color: darken($link-color, 5%);
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $headings-color;
+	line-height: $headings-line-height;
+}
+h1, h2 {
+	font-family: $headings-font-family;
+	font-weight: $headings-font-weight;
+	font-style: italic;
+}
+h1 {
+	Margin-top: $spacing-xl;
+	Margin-bottom: $spacing-md;
+
+	text-transform: uppercase;
+}
+h2 {
+	Margin-top: $spacing-xl;
+	Margin-bottom: $spacing-md;
+
+	color: $teal;
+	font-size: $font-size-base * 1.1;
+}
+h3, h4, h5, h6 {
+	Margin-top: $spacing-lg;
+	Margin-bottom: $spacing-sm;
+}
+
+.logo-mark {
+	Margin-bottom: $spacing-sm;
+
+	color: $headings-color;
+	font-family: $headings-font-family;
+	font-weight: $headings-font-weight;
+	font-style: italic;
+}
+.newsletter-title {
+	Margin-top: 0;
+	Margin-bottom: $spacing-sm;
+	line-height: 1 !important;
+}
+
+.section-header, .section-footer {
+	color: $text-color-muted;
+	font-size: $font-size-small;
+
+	a {
+		color: $link-color-muted !important;
+
+		&:hover, &:focus {
+			color: darken($link-color-muted, 5%) !important;
+		}
+	}
+}
+
+hr {
+	Margin-top: $spacing-lg;
+	Margin-bottom: $spacing-lg;
+
+	border-width: 1px 0 0 0;
+	border-color: $gray;
+}
+
+b, strong {
+	font-weight: $font-weight-strong;
+}
+
+.text-small, .has-small-font-size, small {
+	font-size: $font-size-small;
+}
+.text-large, .has-large-font-size {
+	font-size: $font-size-large;
+}
+
+.text-faded {
+	opacity: 0.75;
+}
+
+figure {
+	display: block;
+	max-width: 100%;
+	Margin-top: $spacing-md;
+	Margin-bottom: $spacing-md;
+	Margin-left: 0;
+	Margin-right: 0;
+}
+figcaption {
+	display: block;
+	padding: 4px;
+	Margin-bottom: $spacing-md;
+
+	font-style: italic;
+	font-size: $font-size-small;
+	font-weight: $font-weight-strong;
+	color: $gray;
+}

@@ -1,0 +1,56 @@
+@import "variables";
+
+.spacer,
+.divider {
+	mso-line-height-rule: exactly;
+}
+
+td,
+th,
+div,
+p,
+a {
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+}
+
+td,
+th,
+div,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-family-base;
+}
+
+h1,
+h2 {
+	font-family: $headings-font-family;
+}
+
+#outlook a {
+	padding: 0;
+}
+
+span.MsoHyperlink {
+	mso-style-priority: 99;
+	color: inherit;
+}
+
+span.MsoHyperlinkFollowed {
+	mso-style-priority: 99;
+	color: inherit;
+}
+
+.main-content img.mcRssImage {
+	display: none !important;
+	visibility: hidden !important;
+	mso-hide: all;
+}
+.main-content img.mso {
+}

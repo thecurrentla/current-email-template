@@ -1,0 +1,257 @@
+//Colors
+@media screen {
+}
+.has-background {
+	padding: 1em;
+}
+.has-gray-background-color {
+	color: white !important;
+	border-color: $gray-dark !important;
+	background-color: $gray-dark !important;
+}
+.has-gray-light-background-color {
+	color: white !important;
+	border-color: $gray !important;
+	background-color: $gray !important;
+}
+.has-teal-background-color {
+	color: white !important;
+	border-color: $teal !important;
+	background-color: $teal !important;
+}
+.has-teal-light-background-color {
+	color: $gray-dark !important;
+	border-color: $teal-light !important;
+	background-color: $teal-light !important;
+}
+.has-gold-background-color {
+	color: white !important;
+	border-color: $gold !important;
+	background-color: $gold !important;
+}
+.has-orange-background-color {
+	color: white !important;
+	border-color: $orange !important;
+	background-color: $orange !important;
+}
+
+.has-gray-color {
+	color: $gray-dark !important;
+}
+.has-gray-light-color {
+	color: $gray !important;
+}
+.has-teal-color {
+	color: $teal !important;
+}
+.has-teal-light-color {
+	color: $teal-light !important;
+}
+.has-gold-color {
+	color: $gold !important;
+}
+.has-orange-color {
+	color: $orange !important;
+}
+
+//Images
+.wp-block-image {
+}
+
+
+//Buttons
+
+.wp-block-button {
+	Margin-top: $spacing-sm;
+	Margin-bottom: $spacing-sm;
+}
+
+.wp-block-button__link {
+	font-weight: $font-weight-strong;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+
+	&::after {
+		content: '\0000BB';
+		Margin-left: 0.3em;
+	}
+
+	@media screen {
+		display: inline-block;
+		padding: 0.4em 0.8em;
+
+		border-width: 0;
+		border-style: solid;
+
+		color: white !important;
+		background-color: $link-color !important;
+
+		&:hover, &:focus {
+			color: white !important;
+			background-color: darken($link-color, 5%) !important;
+		}
+
+		text-decoration: none;
+	}
+}
+
+//Separator
+
+.wp-block-separator {
+	max-width: $max-width / 3;
+	Margin-left: auto;
+	Margin-right: auto;
+}
+.wp-block-separator.is-style-wide {
+	max-width: 100%;
+}
+
+//Gallery
+//This block is disabled because it didn't work consistently enough
+
+.wp-block-gallery {
+	padding: 0;
+
+	Margin-top: 0;
+	Margin-left: 0;
+	Margin-right: 0;
+	Margin-bottom: $spacing-sm;
+}
+.blocks-gallery-item {
+	@media screen, print {
+		list-style: none;
+		display: inline-block;
+		vertical-align: top;
+		width: 46%;
+		max-width: 100%;
+
+		Margin-top: 0;
+		Margin-left: 0;
+		Margin-right: 4%;
+		Margin-bottom: 4%;
+
+		figure, img {
+			display: inline-block;
+			max-width: 100%;
+		}
+	}
+}
+
+//Quotes
+
+.wp-block-quote, .wp-block-pullquote blockquote {
+	border-left: 3px solid;
+	Margin-top: $spacing-md;
+	Margin-bottom: $spacing-md;
+	padding: $spacing-md;
+}
+
+//Tables
+.wp-block-table {
+	border-collapse: collapse;
+
+	max-width: 100%;
+	@media screen, print {
+		min-width: 50%;
+	}
+
+	Margin-top: 0px;
+	Margin-left: 0px;
+	Margin-right: 0px;
+	Margin-bottom: $spacing-sm;
+
+	thead, tfoot {
+		background-color: $white-off;
+		border-color: $gray-light;
+		border-style: solid;
+		border-width: 0;
+	}
+	thead {
+		border-bottom-width: 2px;
+	}
+	tfoot {
+		border-top-width: 2px;
+	}
+
+	tr, td, th {
+		border-color: $gray-light;
+		border-style: solid;
+		border-width: 0;
+	}
+	tr {
+		border-width: 0 1px;
+	}
+	td, th {
+		padding: 0.4em 0.8em;
+	}
+	td {
+		border-bottom-width: 1px;
+		border-right-width: 1px;
+	}
+	td:first-child {
+		border-left-width: 1px;
+	}
+	tr:first-child td {
+		border-top-width: 1px;
+	}
+
+	&.is-style-stripes {
+		tr, td, th {
+			border-color: $white-off;
+		}
+
+		tr:nth-child(odd) {
+			background-color: transparent;
+		}
+		tr:nth-child(even) {
+			background-color: transparentize($white-off, 0.5);
+		}
+	}
+}
+
+//Groups
+
+.wp-block-group {
+	Margin-top: $spacing-md;
+	Margin-bottom: $spacing-xl * 1.5;
+
+	> *:last-child {
+		Margin-bottom: 0;
+	}
+}
+
+//Ads
+
+.post-ad {
+	display: block;
+
+	Margin-top: $spacing-lg;
+	Margin-bottom: $spacing-lg;
+
+	background-color: $white-off;
+
+	hr {
+		border-color: $ad-color;
+		border-top-width: 2px;
+	}
+
+	hr:first-child {
+		Margin-bottom: $spacing-sm;
+	}
+	hr:last-child {
+		Margin-top: $spacing-sm;
+	}
+}
+
+.post-ad-title {
+	padding-bottom: $spacing-sm;
+	text-align: center;
+	text-transform: uppercase;
+	color: $ad-color;
+	font-weight: $font-weight-strong;
+}
+
+.post-ad-image {
+	padding-left: $spacing-md;
+	padding-right: $spacing-md;
+}

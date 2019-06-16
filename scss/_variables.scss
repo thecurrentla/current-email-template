@@ -1,0 +1,60 @@
+// Colors
+
+$white: #ffffff;
+$white-off: #f8f8f6;
+
+$gray-dark: #231f20;
+$gray: #6d6e71;
+$gray-light: #e6e7e8;
+
+$teal-dark: #435557;
+$teal: #6bbaca;
+$teal-light: #9ccfde;
+
+$gold: #d3ab47;
+
+$orange: #f15a29;
+
+
+// Applied Colors
+
+$text-color: $gray-dark;
+$text-color-muted: $gray;
+
+$link-color: $teal;
+$link-color-muted: $teal-dark;
+
+$headings-color: $gray-dark;
+
+$ad-color: $gold;
+
+
+// Fonts
+
+@media only screen {
+	@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Open+Sans:400,400i,600,600i');
+}
+
+$font-family-base: Open Sans,Arial,sans-serif;
+$headings-font-family: Libre Baskerville,Georgia,serif;
+
+$font-size-base: 18px;
+$font-size-small: round($font-size-base * 0.8);
+$font-size-large: round($font-size-base * 1.2);
+
+$line-height-base: 1.5;
+$headings-line-height: 1.2;
+
+$font-weight-base: 400;
+$font-weight-strong: 600;
+$headings-font-weight: 700;
+
+
+// Structure
+
+$max-width: 632px;
+
+$spacing-sm: 14px;
+$spacing-md: 18px;
+$spacing-lg: 22px;
+$spacing-xl: 28px;
