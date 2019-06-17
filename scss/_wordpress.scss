@@ -142,8 +142,15 @@
 .wp-block-quote, .wp-block-pullquote blockquote {
 	border-left: 3px solid;
 	Margin-top: $spacing-md;
+	Margin-left: 0;
+	Margin-right: 0;
 	Margin-bottom: $spacing-md;
 	padding: $spacing-md;
+
+	@media only screen and (max-width: $max-width) {
+		Margin-left: $spacing-sm !important;
+		Margin-right: $spacing-sm !important;
+	}
 }
 
 //Tables

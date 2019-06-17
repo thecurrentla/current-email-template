@@ -140,13 +140,20 @@ figcaption {
   color: #6d6e71;
 }
 
+blockquote {
+  display: block;
+  max-width: 100%;
+  Margin-left: 0;
+  Margin-right: 0;
+}
+
 .wrapper img {
   max-width: 632px;
 }
 
 @media only screen and (max-width: 632px) {
   .wrapper img {
-    max-width: 100%;
+    max-width: 100% !important;
   }
 }
 
@@ -532,8 +539,17 @@ figcaption {
 .wp-block-quote, .wp-block-pullquote blockquote {
   border-left: 3px solid;
   Margin-top: 18px;
+  Margin-left: 0;
+  Margin-right: 0;
   Margin-bottom: 18px;
   padding: 18px;
+}
+
+@media only screen and (max-width: 632px) {
+  .wp-block-quote, .wp-block-pullquote blockquote {
+    Margin-left: 14px !important;
+    Margin-right: 14px !important;
+  }
 }
 
 .wp-block-table {

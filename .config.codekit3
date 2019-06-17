@@ -9,13 +9,37 @@
 	],
 "creatorBuild": "29156",
 "files": {
-	"/_styles.kit": {
+	"/_head-meta.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_styles.html",
+		"oAP": "/_head-meta.html",
+		"oF": 0
+		},
+	"/_head-styles.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_head-styles.html",
 		"oF": 1
+		},
+	"/_tr-footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_tr-footer.html",
+		"oF": 0
+		},
+	"/_tr-view-in-browser.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_tr-view-in-browser.html",
+		"oF": 0
 		},
 	"/outlook.css": {
 		"aP": 1,
@@ -45,6 +69,22 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"/rss-template.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/rss-template.html",
+		"oF": 0
+		},
+	"/rss-template.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/rss-template.html",
+		"oF": 1
 		},
 	"/scss/_basics.scss": {
 		"aP": 1,
@@ -147,20 +187,12 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/template.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template.html",
-		"oF": 0
-		},
-	"/template.kit": {
+	"/wysiwyg-template.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/template.html",
+		"oAP": "/wysiwyg-template.html",
 		"oF": 1
 		}
 	},
